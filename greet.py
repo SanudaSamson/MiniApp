@@ -1,6 +1,9 @@
 
+import datetime
+
 def greet(name):
-    return f"Hello, {name}!"
+    now = datetime.datetime.now()
+    return f"Hello, {name}!. It's {now.strftime('%Y-%m-%d %H:%M:%S')}."
 
 if __name__ == "__main__":
     name = input("Enter your name: ")
